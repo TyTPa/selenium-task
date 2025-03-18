@@ -19,7 +19,7 @@ class DivannewparsSpider(scrapy.Spider):
 
 # Прописываем открытие нового файла, задаём ему название и форматирование
 # 'w' означает режим доступа, мы разрешаем вносить данные в таблицу
-        with open("svet.csv", 'w',newline='', encoding='utf-8') as file:
+        with open("svet_2.csv", 'w',newline='', encoding='utf-8') as file:
     # Используем модуль csv и настраиваем запись данных в виде таблицы
     # Создаём объект
             writer = csv.writer(file)
