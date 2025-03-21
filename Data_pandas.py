@@ -8,3 +8,7 @@ print(df['Country/Dependency'])
 print(df[df['Country/Dependency'] == 'Russia'])
 df['A-'] = pd.to_numeric(df['A-'], errors='coerce')
 print(df[df['A-'] > 0.02])
+
+df2 = pd.read_csv('dz.csv')
+group = df2.groupby('City')['Salary'].mean()
+print(group)
